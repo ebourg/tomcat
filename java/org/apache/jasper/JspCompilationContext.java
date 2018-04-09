@@ -224,6 +224,8 @@ public class JspCompilationContext {
                 if (jspCompiler == null) {
                     jspCompiler = createCompiler("org.apache.jasper.compiler.AntCompiler");
                 }
+            } else if ("javac".equals(options.getCompiler())) {
+                jspCompiler = createCompiler("org.apache.jasper.compiler.JavacCompiler");
             } else {
                 jspCompiler = createCompiler("org.apache.jasper.compiler.AntCompiler");
                 if (jspCompiler == null) {

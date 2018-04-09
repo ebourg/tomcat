@@ -95,15 +95,16 @@ attribute org.apache.jasper.Constants.SERVLET_CLASSPATH is not set. This
 attribute is always set when Jasper is used within Tomcat. By default the
 classpath is created dynamically based on the current web application.</li>
 
-<li><strong>compiler</strong> - Which compiler Ant should use to compile JSP
-pages. The valid values for this are the same as for the compiler attribute of
+<li><strong>compiler</strong> - Which compiler should be used to compile JSP
+pages. The valid values for this parameter are either <code>javac</code> to use
+the compiler from the JDK or the same values as for the compiler attribute of
 Ant&apos;s
 <a href="https://ant.apache.org/manual/Tasks/javac.html#compilervalues">javac</a>
 task. If the value is not set, then the default Eclipse JDT Java compiler will
-be used instead of using Ant. There is no default value. If this attribute is
-set then <code>setenv.[sh|bat]</code> should be used to add
-<code>ant.jar</code>, <code>ant-launcher.jar</code> and <code>tools.jar</code>
-to the <code>CLASSPATH</code> environment variable.</li>
+be used instead. There is no default value. If this attribute is
+set to a value other than <code>javac</code>, then <code>setenv.[sh|bat]</code>
+should be used to add <code>ant.jar</code>, <code>ant-launcher.jar</code> and
+<code>tools.jar</code> to the <code>CLASSPATH</code> environment variable.</li>
 
 <li><strong>compilerSourceVM</strong> - What JDK version are the source files
 compatible with? (Default value: <code>1.8</code>)</li>

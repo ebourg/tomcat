@@ -126,12 +126,16 @@ public interface Options {
     /**
      * Compiler to use.
      *
-     * <p>
-     * If <code>null</code> (the default), the java compiler from Eclipse JDT
-     * project, bundled with Tomcat, will be used. Otherwise, the
-     * <code>javac</code> task from Apache Ant will be used to call an external
-     * java compiler and the value of this option will be passed to it. See
-     * Apache Ant documentation for the possible values.
+     * <ul>
+     *   <li>If <code>null</code> (the default), the java compiler from Eclipse JDT
+     *       project, bundled with Tomcat, will be used.</li>
+     *   <li>If <code>"javac"</code> the java compiler from the JDK will be used.</li>
+     *   <li>Otherwise, the <code>javac</code> task from Apache Ant will be used to call
+     *       an external Java compiler and the value of this option will be passed to it.
+     *       See the <a href="https://ant.apache.org/manual/Tasks/javac.html#compilervalues">Apache Ant documentation</a>
+     *       for the possible values.</li>
+     * </ul>
+     *
      * @return the compiler name
      */
     public String getCompiler();

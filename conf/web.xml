@@ -139,8 +139,8 @@
   <!--                       generated servlets?  [Created dynamically      -->
   <!--                       based on the current web application]          -->
   <!--                                                                      -->
-  <!--   compiler            Which compiler Ant should use to compile JSP   -->
-  <!--                       pages.  See the jasper documentation for more  -->
+  <!--   compiler            Which compiler should be used to compile JSP   -->
+  <!--                       pages. See the jasper documentation for more   -->
   <!--                       information.                                   -->
   <!--                                                                      -->
   <!--   compilerSourceVM    Compiler source VM. [1.8]                      -->
